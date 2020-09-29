@@ -1,8 +1,8 @@
 {
     "scripts": {
         "test:chrome": "cypress run --browser chrome",
-        "combine-report": "mochawesome-merge ./mochawesome-report/*.json -o index.json",
-        "generate-report": "merge index.json --reportDir public --assetsDir public/assets --reportPagrTitle index.html"
+        "combine:report": "mochawesome-merge ./mochawesome-report/*.json -o index.json",
+        "generate:report": "merge index.json --reportDir public --assetsDir public/assets --reportPagrTitle index.html"
     },
     "devDependencies": {
         "cypress": "4.9.0",
