@@ -22,16 +22,16 @@ jobs:
       run: npm run test:chrome
       continue-on-error: false 
     
-    - name: Copy tests execution videos and screenshots
+    - name: Copy tests execution videos
       run: |
         mkdir public
         cp -r cypress/videos public/videos
         
     - name: Merge tests reports
-      run: nmp run combine:report
+      run: nmp run combine-report
   
     - name: Generate tests reports
-      run: nmp run generate:report
+      run: nmp run generate-report
     
     - name: Deploy HTML report page to GitHub Page
       uses: peaceiris/actions-gh-pages@v3
