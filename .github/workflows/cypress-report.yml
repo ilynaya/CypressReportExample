@@ -28,10 +28,10 @@ jobs:
         cp -r cypress/videos public/videos
         
     - name: Merge tests reports
-      run: nmp run combine-report
+      run: npm run combine:report
   
     - name: Generate tests reports
-      run: nmp run generate-report
+      run: npm run generate:report
     
     - name: Deploy HTML report page to GitHub Page
       uses: peaceiris/actions-gh-pages@v3
