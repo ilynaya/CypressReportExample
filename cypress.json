@@ -1,0 +1,8 @@
+{
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "ovewrite": false,
+        "html": false,
+        "json": true
+    }
+}
