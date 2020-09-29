@@ -26,7 +26,6 @@ jobs:
       run: |
         mkdir public
         cp -r cypress/videos public/videos
-        cp -r cypress/screenshots public/screenshots
         
     - name: Merge tests reports
       run: nmp run combine:report
