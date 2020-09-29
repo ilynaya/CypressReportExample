@@ -30,5 +30,11 @@ jobs:
     - name: Merge tests reports
       run: nmp run combine:report
   
-    - name: Merge tests reports
+    - name: Generate tests reports
       run: nmp run generate:report
+    
+    - name: Deploy HTML report page to GitHub Page
+      uses: peaceiris/actions-gh-pages@v3
+      with: 
+        github_token: ${{secrets.GITHUB_TOKEN}}
+        publish_dir: ./public      
